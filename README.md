@@ -19,7 +19,7 @@ This repository is organized for AI retrieval first:
 
 1. All you have to do is just add this link to your project's context
  ```markdown
- [https://forzayt.github.io/RedM-Knowledge-Base](https://github.com/Forza-Studios/RedM-AI-Knowledge-Brain)
+ https://github.com/Forza-Studios/RedM-AI-Knowledge-Brain
  ```
 2. Start with `docs/getting-started/overview.md`
 3. Read `ai/optimization-rules.md` and `ai/do-not-do.md`
