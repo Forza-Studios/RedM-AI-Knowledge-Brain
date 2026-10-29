@@ -1,0 +1,3057 @@
+{
+  "meta": {
+    "title": "RedM / RDR3 scenario native corpus",
+    "generated": "2026-10-29",
+    "count": 111,
+    "sources": [
+      "https://github.com/alloc8or/rdr3-nativedb-data (natives.json)",
+      "C:/Users/Forza/AppData/Local/RedM/RedM.app/citizen/scripting/lua/rdr3_universal.lua (local Lua wrappers)",
+      "C:/Users/Forza/AppData/Local/RedM/RedM.app/citizen/clr2/lib/mono/4.5/v2/Native/ref/CitizenFX.RedM.Native.xml (local C# docs)"
+    ],
+    "notes": [
+      "in_local_lua_build = the local RedM client exposes a Lua wrapper for this hash.",
+      "lua_alias is the named camelCase wrapper; local_alias may be an unnamed N_0x wrapper.",
+      "Scenario point handles are 32-bit values stored in 8-byte array slots by GetScenarioPointsInArea."
+    ]
+  },
+  "natives": [
+    {
+      "hash": "0x01AF8A3729231A43",
+      "hash_signed": 690166339,
+      "namespace": "TASK",
+      "c_name": "_GET_RANSACK_SCENARIO_CONTAINER_REMAINING_LOOT_COUNT",
+      "lua_alias": null,
+      "local_alias": "N_0x01af8a3729231a43",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Returns the total number of lootable items currently inside the specified scenario container entity. This value decreases as items are looted.Before opening, it may return 0 because contents are not always loaded until the container is opened.",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x02C8E5B49848664E",
+      "hash_signed": -1740085682,
+      "namespace": "TASK",
+      "c_name": "SET_SCENARIO_GROUP_ENABLED",
+      "lua_alias": "SetScenarioGroupEnabled",
+      "local_alias": "SetScenarioGroupEnabled",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "const char*",
+          "name": "scenarioGroup"
+        },
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenarioGroup, toggle",
+      "local_xml_summary": "SET_SCENARIO_GROUP_ENABLED"
+    },
+    {
+      "hash": "0x02EBBB3989B7E695",
+      "hash_signed": -1984436587,
+      "namespace": "TASK",
+      "c_name": "_PED_IS_IN_SCENARIO_BASE",
+      "lua_alias": "PedIsInScenarioBase",
+      "local_alias": "PedIsInScenarioBase",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "_PED_IS_IN_SCENARIO_BASE"
+    },
+    {
+      "hash": "0x0C3CB2E600C8977D",
+      "hash_signed": 13145981,
+      "namespace": "TASK",
+      "c_name": "IS_PED_EXITING_SCENARIO",
+      "lua_alias": "IsPedExitingScenario",
+      "local_alias": "IsPedExitingScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, p1",
+      "local_xml_summary": "IS_PED_EXITING_SCENARIO"
+    },
+    {
+      "hash": "0x0CC36D4156006509",
+      "hash_signed": 1442866441,
+      "namespace": "TASK",
+      "c_name": "_IS_SCENARIO_POINT_ACTIVE",
+      "lua_alias": "IsScenarioPointActive",
+      "local_alias": "IsScenarioPointActive",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_IS_SCENARIO_POINT_ACTIVE"
+    },
+    {
+      "hash": "0x0D40EE2A7F2B2D6D",
+      "hash_signed": 2133536109,
+      "namespace": "TASK",
+      "c_name": "RESET_SCENARIO_TYPES_ENABLED",
+      "lua_alias": "ResetScenarioTypesEnabled",
+      "local_alias": "ResetScenarioTypesEnabled",
+      "in_local_lua_build": true,
+      "params": [],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "",
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x0F6641449DD86FBE",
+      "hash_signed": -1646760002,
+      "namespace": "TASK",
+      "c_name": "_TASK_USE_SCENARIO_POINT_2",
+      "lua_alias": "TaskUseScenarioPoint_2",
+      "local_alias": "TaskUseScenarioPoint_2",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Ped",
+          "name": "ped2"
+        },
+        {
+          "type": "Any",
+          "name": "p2"
+        },
+        {
+          "type": "const char*",
+          "name": "p3"
+        },
+        {
+          "type": "int",
+          "name": "p4"
+        },
+        {
+          "type": "Hash",
+          "name": "p5"
+        },
+        {
+          "type": "float",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, ped2, p2, p3, p4, p5, p6, p7",
+      "local_xml_summary": "_TASK_USE_SCENARIO_POINT_2"
+    },
+    {
+      "hash": "0x14747F4A5971DE4E",
+      "hash_signed": 1500634702,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_RANDOM_SCENARIO_IN_GROUP",
+      "lua_alias": "TaskUseRandomScenarioInGroup",
+      "local_alias": "TaskUseRandomScenarioInGroup",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Any",
+          "name": "p1"
+        },
+        {
+          "type": "Any",
+          "name": "p2"
+        },
+        {
+          "type": "Any",
+          "name": "p3"
+        },
+        {
+          "type": "Any",
+          "name": "p4"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, p1, p2, p3, p4",
+      "local_xml_summary": "TASK_USE_RANDOM_SCENARIO_IN_GROUP"
+    },
+    {
+      "hash": "0x188313616D184213",
+      "hash_signed": 1830306323,
+      "namespace": "PERSISTENCE",
+      "c_name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS_WITH_MODEL",
+      "lua_alias": "PersistenceIsScenarioMarkedAsLootedAtCoordsWithModel",
+      "local_alias": "PersistenceIsScenarioMarkedAsLootedAtCoordsWithModel",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "Hash",
+          "name": "model"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "x, y, z, model",
+      "local_xml_summary": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS_WITH_MODEL"
+    },
+    {
+      "hash": "0x188F8071F244B9B8",
+      "hash_signed": -230377032,
+      "namespace": "TASK",
+      "c_name": "_SET_RANSACK_SCENARIO_CONTAINER_OPENING_STATE",
+      "lua_alias": "SetScenarioContainerOpeningState",
+      "local_alias": "SetScenarioContainerOpeningState",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        },
+        {
+          "type": "BOOL",
+          "name": "open"
+        }
+      ],
+      "return_type": "void",
+      "comment": "Opens/closes containers: ChestDugUp",
+      "local_params": "entity, open",
+      "local_xml_summary": "Opens/closes containers: ChestDugUp"
+    },
+    {
+      "hash": "0x19A6BE7D9C6884D3",
+      "hash_signed": -1670871853,
+      "namespace": "STREAMING",
+      "c_name": "_REQUEST_SCENARIO_TYPE",
+      "lua_alias": "RequestScenarioType",
+      "local_alias": "RequestScenarioType",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "int",
+          "name": "p1"
+        },
+        {
+          "type": "Hash",
+          "name": "entityModel"
+        },
+        {
+          "type": "Hash",
+          "name": "conditionalAnim"
+        }
+      ],
+      "return_type": "int",
+      "comment": "entityModel can be 0 or using Hash or using GET_ENTITY_MODEL conditionalAnim can be 0 or using Hash also accepts GET_ACTIVE_DYNAMIC_SCENARIO.",
+      "local_params": "scenarioType, p1, p2, p3",
+      "local_xml_summary": "_REQUEST_SCENARIO_TYPE"
+    },
+    {
+      "hash": "0x1ACBC313966C21F3",
+      "hash_signed": -1771298317,
+      "namespace": "TASK",
+      "c_name": "_IS_SCENARIO_IN_USE",
+      "lua_alias": null,
+      "local_alias": "N_0x1acbc313966c21f3",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Checks whether a specified scenario is currently being used (actively played) by any entity (player or ped). Returns true if the scenario is already occupied, otherwise false.",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x1B5C85C612E5256E",
+      "hash_signed": 317007214,
+      "namespace": "PED",
+      "c_name": "ADD_SCENARIO_BLOCKING_AREA",
+      "lua_alias": "AddScenarioBlockingArea",
+      "local_alias": "AddScenarioBlockingArea",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "x1"
+        },
+        {
+          "type": "float",
+          "name": "y1"
+        },
+        {
+          "type": "float",
+          "name": "z1"
+        },
+        {
+          "type": "float",
+          "name": "x2"
+        },
+        {
+          "type": "float",
+          "name": "y2"
+        },
+        {
+          "type": "float",
+          "name": "z2"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        },
+        {
+          "type": "int",
+          "name": "blockingFlags"
+        }
+      ],
+      "return_type": "int",
+      "comment": "blockingFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScenarioBlockingFlags",
+      "local_params": "x1, y1, z1, x2, y2, z2, p6, blockingFlags",
+      "local_xml_summary": "blockingFlags: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/eScenarioBlockingFlags"
+    },
+    {
+      "hash": "0x2056AB38DF06825C",
+      "hash_signed": -553221540,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_POINT_COORDS",
+      "lua_alias": "SetScenarioPointCoords",
+      "local_alias": "SetScenarioPointCoords",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "float",
+          "name": "xPos"
+        },
+        {
+          "type": "float",
+          "name": "yPos"
+        },
+        {
+          "type": "float",
+          "name": "zPos"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario, xPos, yPos, zPos, p4",
+      "local_xml_summary": "_SET_SCENARIO_POINT_COORDS"
+    },
+    {
+      "hash": "0x28CB6391ACEDD9DB",
+      "hash_signed": -1393698341,
+      "namespace": "PED",
+      "c_name": "_SET_SCENARIO_HUMAN_DENSITY_MULTIPLIER_THIS_FRAME",
+      "lua_alias": "SetScenarioHumanDensityMultiplierThisFrame",
+      "local_alias": "SetScenarioHumanDensityMultiplierThisFrame",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "multiplier"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "multiplier",
+      "local_xml_summary": "_SET_SCENARIO_HUMAN_DENSITY_MULTIPLIER_THIS_FRAME"
+    },
+    {
+      "hash": "0x295514F198EFD0CA",
+      "hash_signed": -1729113910,
+      "namespace": "TASK",
+      "c_name": "GET_PROP_FOR_SCENARIO_POINT",
+      "lua_alias": "GetPropForScenarioPoint",
+      "local_alias": "GetPropForScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenarioPoint"
+        },
+        {
+          "type": "const char*",
+          "name": "name"
+        }
+      ],
+      "return_type": "Entity",
+      "comment": "Old name: _GET_SCENARIO_POINT_ENTITY",
+      "local_params": "scenarioPoint, name",
+      "local_xml_summary": "GET_PROP_FOR_SCENARIO_POINT"
+    },
+    {
+      "hash": "0x295E3CCEC879CCD7",
+      "hash_signed": -931541801,
+      "namespace": "TASK",
+      "c_name": "PED_HAS_USE_SCENARIO_TASK",
+      "lua_alias": "PedHasUseScenarioTask",
+      "local_alias": "PedHasUseScenarioTask",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "PED_HAS_USE_SCENARIO_TASK"
+    },
+    {
+      "hash": "0x2B02DB082258625F",
+      "hash_signed": 576217695,
+      "namespace": "PED",
+      "c_name": "GIVE_PED_HASH_SCENARIO_PROP",
+      "lua_alias": "GivePedHashScenarioProp",
+      "local_alias": "GivePedHashScenarioProp",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Object",
+          "name": "object"
+        },
+        {
+          "type": "const char*",
+          "name": "conditionalAnim"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "Hash",
+          "name": "p4"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, object, conditionalAnim, scenarioType, p4, p5",
+      "local_xml_summary": "GIVE_PED_HASH_SCENARIO_PROP"
+    },
+    {
+      "hash": "0x2D0571BB55879DA2",
+      "hash_signed": 1434951074,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_TYPE_PED_IS_USING",
+      "lua_alias": "GetScenarioPointTypePedIsUsing",
+      "local_alias": "GetScenarioPointTypePedIsUsing",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "int",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "_GET_SCENARIO_POINT_TYPE_PED_IS_USING"
+    },
+    {
+      "hash": "0x2E20878FD208A68E",
+      "hash_signed": -771185010,
+      "namespace": "TASK",
+      "c_name": "_RESET_SCENARIO_FOR_ENTITY",
+      "lua_alias": "ResetScenarioForEntity",
+      "local_alias": "ResetScenarioForEntity",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "Entity",
+          "name": "entity"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario, entity",
+      "local_xml_summary": "_RESET_SCENARIO_FOR_ENTITY"
+    },
+    {
+      "hash": "0x31D16B74C6E29D66",
+      "hash_signed": -958227098,
+      "namespace": "PED",
+      "c_name": "REMOVE_SCENARIO_BLOCKING_AREA",
+      "lua_alias": "RemoveScenarioBlockingArea",
+      "local_alias": "RemoveScenarioBlockingArea",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Any",
+          "name": "p0"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "p0, p1",
+      "local_xml_summary": "REMOVE_SCENARIO_BLOCKING_AREA"
+    },
+    {
+      "hash": "0x322BFDEA666E2B0E",
+      "hash_signed": 1718496014,
+      "namespace": "TASK",
+      "c_name": "_TASK_USE_NEAREST_SCENARIO_TO_COORD",
+      "lua_alias": "TaskUseNearestScenarioToCoord",
+      "local_alias": "TaskUseNearestScenarioToCoord",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        },
+        {
+          "type": "int",
+          "name": "duration"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        },
+        {
+          "type": "BOOL",
+          "name": "p8"
+        },
+        {
+          "type": "BOOL",
+          "name": "p9"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, x, y, z, distance, duration, p6, p7, p8, p9",
+      "local_xml_summary": "_TASK_USE_NEAREST_SCENARIO_TO_COORD"
+    },
+    {
+      "hash": "0x345EC3B7EBDE1CB5",
+      "hash_signed": -337765195,
+      "namespace": "TASK",
+      "c_name": "GET_SCENARIO_POINTS_IN_AREA",
+      "lua_alias": "GetScenarioPointsInArea",
+      "local_alias": "GetScenarioPointsInArea",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "posX"
+        },
+        {
+          "type": "float",
+          "name": "posY"
+        },
+        {
+          "type": "float",
+          "name": "posZ"
+        },
+        {
+          "type": "float",
+          "name": "radius"
+        },
+        {
+          "type": "Any*",
+          "name": "scenariosInRadius"
+        },
+        {
+          "type": "int",
+          "name": "size"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Note: scenariosInRadius is an array, and its size and values should be aligned to 8 bytes.",
+      "local_params": "posX, posY, posZ, radius, size",
+      "local_xml_summary": "Note: scenariosInRadius is an array, and its size and values should be aligned to 8 bytes."
+    },
+    {
+      "hash": "0x34D6AC1157C8226C",
+      "hash_signed": 1472733804,
+      "namespace": "PED",
+      "c_name": "IS_PED_USING_SCENARIO_HASH",
+      "lua_alias": "IsPedUsingScenarioHash",
+      "local_alias": "IsPedUsingScenarioHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioHash"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Equivalent to IS_PED_USING_SCENARIO from V but takes a hash instead of a string.",
+      "local_params": "ped, scenarioHash",
+      "local_xml_summary": "Equivalent to IS_PED_USING_SCENARIO from V but takes a hash instead of a string."
+    },
+    {
+      "hash": "0x367A09DED4E05B99",
+      "hash_signed": -723493991,
+      "namespace": "TASK",
+      "c_name": "IS_SCENARIO_GROUP_ENABLED",
+      "lua_alias": "IsScenarioGroupEnabled",
+      "local_alias": "IsScenarioGroupEnabled",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "const char*",
+          "name": "scenarioGroup"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioGroup",
+      "local_xml_summary": "IS_SCENARIO_GROUP_ENABLED"
+    },
+    {
+      "hash": "0x3774B03456DD6106",
+      "hash_signed": 1457348870,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_NEAREST_TRAIN_SCENARIO_TO_COORD_WARP",
+      "lua_alias": "TaskUseNearestTrainScenarioToCoordWarp",
+      "local_alias": "TaskUseNearestTrainScenarioToCoordWarp",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, x, y, z, distance",
+      "local_xml_summary": "TASK_USE_NEAREST_TRAIN_SCENARIO_TO_COORD_WARP"
+    },
+    {
+      "hash": "0x3A815DB3EA088722",
+      "hash_signed": -368539870,
+      "namespace": "TASK",
+      "c_name": "IS_SCENARIO_TYPE_ENABLED",
+      "lua_alias": "IsScenarioTypeEnabled",
+      "local_alias": "IsScenarioTypeEnabled",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "const char*",
+          "name": "scenarioType"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioType",
+      "local_xml_summary": "IS_SCENARIO_TYPE_ENABLED"
+    },
+    {
+      "hash": "0x3BBDD6143FF16F98",
+      "hash_signed": 1072787352,
+      "namespace": "PED",
+      "c_name": "_GIVE_PED_SCENARIO_PROP",
+      "lua_alias": "GivePedScenarioProp",
+      "local_alias": "GivePedScenarioProp",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Object",
+          "name": "object"
+        },
+        {
+          "type": "const char*",
+          "name": "conditionalAnim"
+        },
+        {
+          "type": "const char*",
+          "name": "p3"
+        },
+        {
+          "type": "const char*",
+          "name": "p4"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, object, conditionalAnim, p3, p4, p5",
+      "local_xml_summary": "_GIVE_PED_SCENARIO_PROP"
+    },
+    {
+      "hash": "0x444C910A5058E568",
+      "hash_signed": 1348003176,
+      "namespace": "TASK",
+      "c_name": "FORCE_SCENARIO_GROUP_PRIORITY",
+      "lua_alias": "ForceScenarioGroupPriority",
+      "local_alias": "ForceScenarioGroupPriority",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Any",
+          "name": "p0"
+        },
+        {
+          "type": "Any",
+          "name": "p1"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "p0, p1",
+      "local_xml_summary": "FORCE_SCENARIO_GROUP_PRIORITY"
+    },
+    {
+      "hash": "0x463803429297117C",
+      "hash_signed": -1835593348,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_QUICK_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayQuickScenarioExit",
+      "local_alias": "SetPedShouldPlayQuickScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "int",
+          "name": "lookIntensity"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
+      "local_params": "ped, x, y, z, lookIntensity, p5",
+      "local_xml_summary": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0x4C39C95AE5DB1329",
+      "hash_signed": -438627543,
+      "namespace": "PED",
+      "c_name": "_ADD_SCENARIO_BLOCKING_VOLUME",
+      "lua_alias": "AddScenarioBlockingVolume",
+      "local_alias": "AddScenarioBlockingVolume",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Volume",
+          "name": "volume"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        },
+        {
+          "type": "int",
+          "name": "flag"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "flag: see ADD_SCENARIO_BLOCKING_AREA",
+      "local_params": "volume, p1, flag",
+      "local_xml_summary": "flag: see ADD_SCENARIO_BLOCKING_AREA"
+    },
+    {
+      "hash": "0x4D1F61FC34AF3CD1",
+      "hash_signed": 883899601,
+      "namespace": "TASK",
+      "c_name": "TASK_START_SCENARIO_AT_POSITION",
+      "lua_alias": "TaskStartScenarioAtPosition",
+      "local_alias": "TaskStartScenarioAtPosition",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioHash"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "heading"
+        },
+        {
+          "type": "int",
+          "name": "duration"
+        },
+        {
+          "type": "BOOL",
+          "name": "sittingScenario"
+        },
+        {
+          "type": "BOOL",
+          "name": "teleport"
+        },
+        {
+          "type": "const char*",
+          "name": "p9"
+        },
+        {
+          "type": "float",
+          "name": "p10"
+        },
+        {
+          "type": "BOOL",
+          "name": "p11"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, scenarioHash, x, y, z, heading, duration, sittingScenario, teleport, p9, p10, p11",
+      "local_xml_summary": "TASK_START_SCENARIO_AT_POSITION"
+    },
+    {
+      "hash": "0x4EDDD9E9CA5AF985",
+      "hash_signed": -900007547,
+      "namespace": "STREAMING",
+      "c_name": "_REMOVE_SCENARIO_ASSET",
+      "lua_alias": "RemoveScenarioAsset",
+      "local_alias": "RemoveScenarioAsset",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "",
+      "local_params": "scenarioType",
+      "local_xml_summary": "_REMOVE_SCENARIO_ASSET"
+    },
+    {
+      "hash": "0x524B54361229154F",
+      "hash_signed": 304682319,
+      "namespace": "TASK",
+      "c_name": "TASK_START_SCENARIO_IN_PLACE_HASH",
+      "lua_alias": "TaskStartScenarioInPlaceHash",
+      "local_alias": "TaskStartScenarioInPlaceHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioHash"
+        },
+        {
+          "type": "int",
+          "name": "duration"
+        },
+        {
+          "type": "BOOL",
+          "name": "playEnterAnim"
+        },
+        {
+          "type": "Hash",
+          "name": "conditionalHash"
+        },
+        {
+          "type": "float",
+          "name": "heading"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        }
+      ],
+      "return_type": "void",
+      "comment": "https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios Params: duration in milliseconds conditionalHash (optionally): 0 = play random conditional anim. Every conditional anim has requirements to play it. If requirements are not met, ped plays random allowed conditional anim or can be stuck. For example, this scenario type has possible conditional anim WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D, but it can not be played by player, because condition is set to NOT be CAIConditionIsPlayer (check file amb_rest.meta and amb_rest_CA.meta with OPENIV to clarify requirements).",
+      "local_params": "ped, scenarioHash, duration, playEnterAnim, conditionalHash, heading, p6",
+      "local_xml_summary": "https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios Params: duration in milliseconds conditionalHash (optionally): 0 = play random conditional anim. Every conditional anim has requirements to play it. If requirements are not met, ped plays random allowed conditional anim or can be stuck. For example, this scenario type has possible conditional anim WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D, but it can not be played by player, because condition is set to NOT be CAIConditionIsPlayer (check file amb_rest.meta and amb_rest_CA.meta with OPENIV to clarify requirements)."
+    },
+    {
+      "hash": "0x569F1E1237508DEB",
+      "hash_signed": 928026091,
+      "namespace": "PED",
+      "c_name": "_GET_ACTIVE_DYNAMIC_SCENARIO",
+      "lua_alias": "GetActiveDynamicScenario",
+      "local_alias": "GetActiveDynamicScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "Hash",
+      "comment": "Returns kneeling, sitting, squating, and sleeping scenario hashes",
+      "local_params": "ped",
+      "local_xml_summary": "Returns kneeling, sitting, squating, and sleeping scenario hashes"
+    },
+    {
+      "hash": "0x57AB4A3080F85143",
+      "hash_signed": -2131209917,
+      "namespace": "PED",
+      "c_name": "IS_PED_USING_ANY_SCENARIO",
+      "lua_alias": "IsPedUsingAnyScenario",
+      "local_alias": "IsPedUsingAnyScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "IS_PED_USING_ANY_SCENARIO"
+    },
+    {
+      "hash": "0x58E2E0F23F6B76C3",
+      "hash_signed": 1064007363,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP",
+      "lua_alias": "TaskUseNearestScenarioToCoordWarp",
+      "local_alias": "TaskUseNearestScenarioToCoordWarp",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        },
+        {
+          "type": "int",
+          "name": "duration"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        },
+        {
+          "type": "BOOL",
+          "name": "p8"
+        },
+        {
+          "type": "BOOL",
+          "name": "p9"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, x, y, z, distance, duration, p6, p7, p8, p9",
+      "local_xml_summary": "TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP"
+    },
+    {
+      "hash": "0x5A40040BB5AE3EA2",
+      "hash_signed": -1246871902,
+      "namespace": "TASK",
+      "c_name": "_RESET_SCENARIO_SCRIPT",
+      "lua_alias": "ResetScenarioScript",
+      "local_alias": "ResetScenarioScript",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_RESET_SCENARIO_SCRIPT"
+    },
+    {
+      "hash": "0x5A59271FFADD33C1",
+      "hash_signed": -86166591,
+      "namespace": "TASK",
+      "c_name": "DOES_SCENARIO_EXIST_IN_AREA",
+      "lua_alias": "DoesScenarioExistInArea",
+      "local_alias": "DoesScenarioExistInArea",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "radius"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        },
+        {
+          "type": "Any",
+          "name": "p5"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "x, y, z, radius, p4, p5, p6",
+      "local_xml_summary": "DOES_SCENARIO_EXIST_IN_AREA"
+    },
+    {
+      "hash": "0x5AF19B6CC2115D34",
+      "hash_signed": -1039049420,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_POINT_FLAG",
+      "lua_alias": "SetScenarioPointFlag",
+      "local_alias": "SetScenarioPointFlag",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "int",
+          "name": "flag"
+        },
+        {
+          "type": "BOOL",
+          "name": "value"
+        }
+      ],
+      "return_type": "void",
+      "comment": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CScenarioPointFlags__Flags",
+      "local_params": "scenario, flag, value",
+      "local_xml_summary": "flag: https://github.com/Halen84/RDR3-Native-Flags-And-Enums/tree/main/CScenarioPointFlags__Flags"
+    },
+    {
+      "hash": "0x5BA659955369B0E2",
+      "hash_signed": 1399435490,
+      "namespace": "TASK",
+      "c_name": "_GET_PED_USING_SCENARIO_POINT",
+      "lua_alias": "GetPedUsingScenarioPoint",
+      "local_alias": "GetPedUsingScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "Ped",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_GET_PED_USING_SCENARIO_POINT"
+    },
+    {
+      "hash": "0x62FDAD5E01D2DD47",
+      "hash_signed": 30596423,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_EMOTIONAL_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayEmotionalScenarioExit",
+      "local_alias": "SetPedShouldPlayEmotionalScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "int",
+          "name": "lookIntensity"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
+      "local_params": "ped, x, y, z, lookIntensity, p5",
+      "local_xml_summary": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0x640A602946A8C972",
+      "hash_signed": 1185466738,
+      "namespace": "TASK",
+      "c_name": "_GET_RANSACK_SCENARIO_CONTAINER_NUM_COMPARTMENTS",
+      "lua_alias": null,
+      "local_alias": "N_0x640a602946a8c972",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Returns the total number of compartments (drawers, lids, etc.) the specified scenario container entity has. For example, a chest has 1 compartment, while a cabinet with 3 drawers returns 3.",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x6718F40313A2B5A6",
+      "hash_signed": 329430438,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_RADIUS",
+      "lua_alias": "GetScenarioPointRadius",
+      "local_alias": "GetScenarioPointRadius",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "float",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_GET_SCENARIO_POINT_RADIUS"
+    },
+    {
+      "hash": "0x6D07B371E9439019",
+      "hash_signed": -381448167,
+      "namespace": "PED",
+      "c_name": "_ADD_SCENARIO_TRANSITION",
+      "lua_alias": "AddScenarioTransition",
+      "local_alias": "AddScenarioTransition",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "void",
+      "comment": "Forces transition now, called together with 0xD65FDC686A031C83",
+      "local_params": "ped",
+      "local_xml_summary": "Forces transition now, called together with 0xD65FDC686A031C83"
+    },
+    {
+      "hash": "0x6EEAD6AF637DA752",
+      "hash_signed": 1669179218,
+      "namespace": "TASK",
+      "c_name": "DOES_SCENARIO_OF_TYPE_EXIST_IN_AREA_HASH",
+      "lua_alias": "DoesScenarioOfTypeExistInAreaHash",
+      "local_alias": "DoesScenarioOfTypeExistInAreaHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "Hash",
+          "name": "typeHash"
+        },
+        {
+          "type": "float",
+          "name": "radius"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "x, y, z, typeHash, radius, p5",
+      "local_xml_summary": "DOES_SCENARIO_OF_TYPE_EXIST_IN_AREA_HASH"
+    },
+    {
+      "hash": "0x6EF4E31B4D5D2DA0",
+      "hash_signed": 1297952160,
+      "namespace": "TASK",
+      "c_name": "_DISASSOCIATE_PROP_FROM_SCENARIO",
+      "lua_alias": "DisassociatePropFromScenario",
+      "local_alias": "DisassociatePropFromScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "const char*",
+          "name": "propName"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario, propName",
+      "local_xml_summary": "_DISASSOCIATE_PROP_FROM_SCENARIO"
+    },
+    {
+      "hash": "0x7467165EE97D3C68",
+      "hash_signed": -377668504,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_ENTITY",
+      "lua_alias": "GetScenarioPointEntity",
+      "local_alias": "GetScenarioPointEntity",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "Entity",
+      "comment": "Note: The current name for this native is the old name of 0x295514F198EFD0CA Old name for this native: _GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO",
+      "local_params": "scenario",
+      "local_xml_summary": "Note: The current name for this native is the old name of 0x295514F198EFD0CA Old name for this native: _GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO"
+    },
+    {
+      "hash": "0x748040460F8DF5DC",
+      "hash_signed": 260961756,
+      "namespace": "TASK",
+      "c_name": "PLAY_ANIM_ON_RUNNING_SCENARIO",
+      "lua_alias": "PlayAnimOnRunningScenario",
+      "local_alias": "PlayAnimOnRunningScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "const char*",
+          "name": "animDict"
+        },
+        {
+          "type": "const char*",
+          "name": "animName"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, animDict, animName",
+      "local_xml_summary": "PLAY_ANIM_ON_RUNNING_SCENARIO"
+    },
+    {
+      "hash": "0x76E98B52369A289C",
+      "hash_signed": 916072604,
+      "namespace": "TASK",
+      "c_name": "_DOES_SCENARIO_GROUP_EXIST_HASH",
+      "lua_alias": "DoesScenarioGroupExistHash",
+      "local_alias": "DoesScenarioGroupExistHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioGroup"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioGroup",
+      "local_xml_summary": "_DOES_SCENARIO_GROUP_EXIST_HASH"
+    },
+    {
+      "hash": "0x788756D73AC2E07C",
+      "hash_signed": 985849980,
+      "namespace": "TASK",
+      "c_name": "IS_SCENARIO_OCCUPIED",
+      "lua_alias": "IsScenarioOccupied",
+      "local_alias": "IsScenarioOccupied",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "p0"
+        },
+        {
+          "type": "float",
+          "name": "p1"
+        },
+        {
+          "type": "float",
+          "name": "p2"
+        },
+        {
+          "type": "float",
+          "name": "p3"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "p0, p1, p2, p3, p4",
+      "local_xml_summary": "IS_SCENARIO_OCCUPIED"
+    },
+    {
+      "hash": "0x79197F7D2BB5E73A",
+      "hash_signed": 733341498,
+      "namespace": "TASK",
+      "c_name": "_TRANSITION_SCENARIO_TO_CONDITIONAL_ANIM",
+      "lua_alias": null,
+      "local_alias": "N_0x79197f7d2bb5e73a",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "int",
+          "name": "scenarioPoint"
+        },
+        {
+          "type": "const char*",
+          "name": "clipsetDict"
+        },
+        {
+          "type": "const char*",
+          "name": "clipName"
+        },
+        {
+          "type": "const char*",
+          "name": "fromConditionalAnim"
+        },
+        {
+          "type": "int",
+          "name": "flags"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Requests an authored transition for a ped that is currently using a scenario point, switching into a specific conditional/clipset branch defined for that scenario. Meta / authoring: - This mirrors entries in \"script_common_ca.meta\" where a transition links a <FromConditionalAnims> key to a target <ClipSet> (clipsetDict + clipName). - fromConditionalAnim should match the <FromConditionalAnims> name for the transition (some scripts pass 0 when they don’t care / use the default authored path). Notes: - Scripts commonly call PED::_ADD_SCENARIO_TRANSITION(ped) immediately before this native. - Return value only indicates the transition request was accepted/triggered; scripts often verify the ped is still using the scenario point afterward (PED::IS_PED_USING_THIS_SCENARIO). C++ style usage (from scripts): - PED::_ADD_SCENARIO_TRANSITION(ped); - if (TASK::_TRANSITION_SCENARIO_TO_CONDITIONAL_ANIM(ped, scenarioPoint, clipsetDict, clipName, fromConditionalAnim, 0)) { if (PED::IS_PED_USING_THIS_SCENARIO(ped, scenarioPoint)) { // transition took; continue state machine } } Example video: https://imgur.com/a/ReSsWNj",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x794AB1379A74064D",
+      "hash_signed": -1703672243,
+      "namespace": "TASK",
+      "c_name": "CREATE_SCENARIO_POINT_HASH_ATTACHED_TO_ENTITY",
+      "lua_alias": "CreateScenarioPointHashAttachedToEntity",
+      "local_alias": "CreateScenarioPointHashAttachedToEntity",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioHash"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "heading"
+        },
+        {
+          "type": "Any",
+          "name": "p6"
+        },
+        {
+          "type": "Any",
+          "name": "p7"
+        },
+        {
+          "type": "BOOL",
+          "name": "p8"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Returns scenario",
+      "local_params": "entity, scenarioHash, x, y, z, heading, p6, p7, p8",
+      "local_xml_summary": "Returns scenario"
+    },
+    {
+      "hash": "0x7A556143A1C03898",
+      "hash_signed": -1581238120,
+      "namespace": "PED",
+      "c_name": "SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME",
+      "lua_alias": "SetScenarioPedDensityMultiplierThisFrame",
+      "local_alias": "SetScenarioPedDensityMultiplierThisFrame",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "multiplier"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "multiplier",
+      "local_xml_summary": "SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME"
+    },
+    {
+      "hash": "0x802092B07E3B1EEA",
+      "hash_signed": 2117803754,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_COMBAT_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayCombatScenarioExit",
+      "local_alias": "SetPedShouldPlayCombatScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "int",
+          "name": "lookIntensity"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
+      "local_params": "ped, x, y, z, lookIntensity",
+      "local_xml_summary": "lookIntensity: see SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0x81948DFE4F5A0283",
+      "hash_signed": 1331298947,
+      "namespace": "TASK",
+      "c_name": "_DELETE_SCENARIO_POINT",
+      "lua_alias": "DeleteScenarioPoint",
+      "local_alias": "DeleteScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_DELETE_SCENARIO_POINT"
+    },
+    {
+      "hash": "0x8245C1F3262F4AC2",
+      "hash_signed": 640633538,
+      "namespace": "PERSISTENCE",
+      "c_name": "PERSISTENCE_ADD_SCENARIO_LOOTED",
+      "lua_alias": "PersistenceAddScenarioLooted",
+      "local_alias": "PersistenceAddScenarioLooted",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "PERSISTENCE_ADD_SCENARIO_LOOTED"
+    },
+    {
+      "hash": "0x8360C47380B6F351",
+      "hash_signed": -2135493807,
+      "namespace": "TASK",
+      "c_name": "_ASSOCIATE_PROP_WITH_SCENARIO",
+      "lua_alias": "AssociatePropWithScenario",
+      "local_alias": "AssociatePropWithScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "Entity",
+          "name": "entity"
+        },
+        {
+          "type": "const char*",
+          "name": "propName"
+        },
+        {
+          "type": "BOOL",
+          "name": "p3"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario, entity, propName, p3",
+      "local_xml_summary": "_ASSOCIATE_PROP_WITH_SCENARIO"
+    },
+    {
+      "hash": "0x841475AC96E794D1",
+      "hash_signed": -1763207983,
+      "namespace": "TASK",
+      "c_name": "DOES_SCENARIO_POINT_EXIST",
+      "lua_alias": "DoesScenarioPointExist",
+      "local_alias": "DoesScenarioPointExist",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "DOES_SCENARIO_POINT_EXIST"
+    },
+    {
+      "hash": "0x849791EBBDBA0362",
+      "hash_signed": -1111882910,
+      "namespace": "TASK",
+      "c_name": "_GET_RANSACK_SCENARIO_CONTAINER_NUM_OPEN_COMPARTMENTS",
+      "lua_alias": null,
+      "local_alias": "N_0x849791ebbdba0362",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Returns the number of currently open compartments for the specified scenario container entity. If the container has closeable compartments (like drawers), this will return how many of them are currently open. If the container is not closeable (like a chest or safe that cannot be closed again), it will return 0.",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x8569C38D2FB80650",
+      "hash_signed": 800589392,
+      "namespace": "TASK",
+      "c_name": "_IS_SCENARIO_POINT_FLAG_SET",
+      "lua_alias": "IsScenarioPointFlagSet",
+      "local_alias": "IsScenarioPointFlagSet",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "int",
+          "name": "flag"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario, flag",
+      "local_xml_summary": "_IS_SCENARIO_POINT_FLAG_SET"
+    },
+    {
+      "hash": "0x916B8E075ABC8B4E",
+      "hash_signed": 1522305870,
+      "namespace": "TASK",
+      "c_name": "IS_PED_SCENARIO_REACT_LOOKING",
+      "lua_alias": "IsPedScenarioReactLooking",
+      "local_alias": "IsPedScenarioReactLooking",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, p1",
+      "local_xml_summary": "IS_PED_SCENARIO_REACT_LOOKING"
+    },
+    {
+      "hash": "0x91A5F9CBEBB9D936",
+      "hash_signed": -340141770,
+      "namespace": "PED",
+      "c_name": "_IS_SCENARIO_BLOCKING_AREA_VALID",
+      "lua_alias": "IsScenarioBlockingAreaValid",
+      "local_alias": "IsScenarioBlockingAreaValid",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Any",
+          "name": "p0"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "p0",
+      "local_xml_summary": "_IS_SCENARIO_BLOCKING_AREA_VALID"
+    },
+    {
+      "hash": "0x9427C94D2E4094A4",
+      "hash_signed": 775984292,
+      "namespace": "STREAMING",
+      "c_name": "_HAS_SCENARIO_TYPE_LOADED",
+      "lua_alias": "HasScenarioTypeLoaded",
+      "local_alias": "HasScenarioTypeLoaded",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioType, p1",
+      "local_xml_summary": "_HAS_SCENARIO_TYPE_LOADED"
+    },
+    {
+      "hash": "0x94B745CE41DB58A1",
+      "hash_signed": 1104894113,
+      "namespace": "TASK",
+      "c_name": "CREATE_SCENARIO_POINT_HASH",
+      "lua_alias": "CreateScenarioPointHash",
+      "local_alias": "CreateScenarioPointHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioHash"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "heading"
+        },
+        {
+          "type": "Any",
+          "name": "p5"
+        },
+        {
+          "type": "Any",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Returns scenario",
+      "local_params": "scenarioHash, x, y, z, heading, p5, p6, p7",
+      "local_xml_summary": "Returns scenario"
+    },
+    {
+      "hash": "0x95423627A9CA598E",
+      "hash_signed": -1446356594,
+      "namespace": "PED",
+      "c_name": "_SET_SCENARIO_PED_DENSITY_THIS_FRAME",
+      "lua_alias": "SetScenarioPedDensityThisFrame",
+      "local_alias": "SetScenarioPedDensityThisFrame",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "configHash"
+        }
+      ],
+      "return_type": "void",
+      "comment": "Sets the scenario ped density to the given config. Valid configs: - BLACKWATER - DEFAULT - NEWBORDEAUX - RHODES - STRAWBERRY - TUMBLEWEED - VALENTINE - VANHORN See common/data/ai/densityscoringconfigs.meta for more information.",
+      "local_params": "configHash",
+      "local_xml_summary": "Sets the scenario ped density to the given config. Valid configs: - BLACKWATER - DEFAULT - NEWBORDEAUX - RHODES - STRAWBERRY - TUMBLEWEED - VALENTINE - VANHORN See common/data/ai/densityscoringconfigs.meta for more information."
+    },
+    {
+      "hash": "0x97A28E63F0BA5631",
+      "hash_signed": -256223695,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP",
+      "lua_alias": "TaskUseNearestScenarioChainToCoordWarp",
+      "local_alias": "TaskUseNearestScenarioChainToCoordWarp",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        },
+        {
+          "type": "BOOL",
+          "name": "p8"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, x, y, z, distance, p5, p6, p7, p8",
+      "local_xml_summary": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD_WARP"
+    },
+    {
+      "hash": "0x9925EDDB6EAB88CD",
+      "hash_signed": 1856735437,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_GROUP_ENABLED_HASH",
+      "lua_alias": "SetScenarioGroupEnabledHash",
+      "local_alias": "SetScenarioGroupEnabledHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioGroup"
+        },
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenarioGroup, toggle",
+      "local_xml_summary": "_SET_SCENARIO_GROUP_ENABLED_HASH"
+    },
+    {
+      "hash": "0x9A77DFD295E29B09",
+      "hash_signed": -1780311287,
+      "namespace": "PED",
+      "c_name": "TOGGLE_SCENARIO_PED_COWER_IN_PLACE",
+      "lua_alias": "ToggleScenarioPedCowerInPlace",
+      "local_alias": "ToggleScenarioPedCowerInPlace",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "If toggle is true, when the ped is using a scenario he will stop it and become scared If toggle is false, the ped will not be scared anymore and continue his scenario Old name: _SET_PED_SCARED_WHEN_USING_SCENARIO",
+      "local_params": "ped, toggle",
+      "local_xml_summary": "If toggle is true, when the ped is using a scenario he will stop it and become scared If toggle is false, the ped will not be scared anymore and continue his scenario"
+    },
+    {
+      "hash": "0x9C54041BB66BCF9E",
+      "hash_signed": -1234448482,
+      "namespace": "PED",
+      "c_name": "IS_PED_USING_THIS_SCENARIO",
+      "lua_alias": "IsPedUsingThisScenario",
+      "local_alias": "IsPedUsingThisScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, scenario",
+      "local_xml_summary": "IS_PED_USING_THIS_SCENARIO"
+    },
+    {
+      "hash": "0x9E3842E5DAD69F80",
+      "hash_signed": -623468672,
+      "namespace": "PED",
+      "c_name": "_SET_SCENARIO_PED_VOLUME_REFERENCE",
+      "lua_alias": null,
+      "local_alias": "N_0x9e3842e5dad69f80",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "Volume",
+          "name": "volume"
+        }
+      ],
+      "return_type": "void",
+      "comment": "Registers the given volume with ped/scenario systems (stores a global ref). Used by SP scripts to keep a volume alive; calling again replaces the previous ref.",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0x9FC3CDB5CE815901",
+      "hash_signed": -830383871,
+      "namespace": "ITEMSETS",
+      "c_name": "GET_INDEXED_SCENARIO_POINT_INDEX_IN_ITEMSET",
+      "lua_alias": "GetIndexedScenarioPointIndexInItemset",
+      "local_alias": "GetIndexedScenarioPointIndexInItemset",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "index"
+        },
+        {
+          "type": "ItemSet",
+          "name": "itemset"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "",
+      "local_params": "index, itemset",
+      "local_xml_summary": "GET_INDEXED_SCENARIO_POINT_INDEX_IN_ITEMSET"
+    },
+    {
+      "hash": "0x9FDA1B3D7E7028B3",
+      "hash_signed": 2121279667,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD",
+      "lua_alias": "TaskUseNearestScenarioChainToCoord",
+      "local_alias": "TaskUseNearestScenarioChainToCoord",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        },
+        {
+          "type": "BOOL",
+          "name": "p8"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, x, y, z, distance, p5, p6, p7, p8",
+      "local_xml_summary": "TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD"
+    },
+    {
+      "hash": "0xA0774E388CE4A679",
+      "hash_signed": -1931172231,
+      "namespace": "PED",
+      "c_name": "_GIVE_PED_SCENARIO_PROP_DYNAMIC",
+      "lua_alias": "GivePedScenarioPropDynamic",
+      "local_alias": "GivePedScenarioPropDynamic",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Object",
+          "name": "object"
+        },
+        {
+          "type": "const char*",
+          "name": "p2"
+        },
+        {
+          "type": "const char*",
+          "name": "p3"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Only used in SP R* Script rcm_jack2",
+      "local_params": "ped, object, p2, p3, p4",
+      "local_xml_summary": "Only used in SP R* Script rcm_jack2"
+    },
+    {
+      "hash": "0xA3A9299C4F2ADB98",
+      "hash_signed": 1328208792,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayNormalScenarioExit",
+      "local_alias": "SetPedShouldPlayNormalScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "SET_PED_SHOULD_PLAY_NORMAL_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0xA77FA7BE9312F8C0",
+      "hash_signed": -1827473216,
+      "namespace": "PED",
+      "c_name": "_SET_SCENARIO_PED_RANGE_MULTIPLIER_THIS_FRAME",
+      "lua_alias": "SetScenarioPedRangeMultiplierThisFrame",
+      "local_alias": "SetScenarioPedRangeMultiplierThisFrame",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "multiplier"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "multiplier",
+      "local_xml_summary": "_SET_SCENARIO_PED_RANGE_MULTIPLIER_THIS_FRAME"
+    },
+    {
+      "hash": "0xA8452DD321607029",
+      "hash_signed": 559968297,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_COORDS",
+      "lua_alias": "GetScenarioPointCoords",
+      "local_alias": "GetScenarioPointCoords",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "Vector3",
+      "comment": "Params: p1 is always true in R* Scripts",
+      "local_params": "scenario, p1",
+      "local_xml_summary": "Params: p1 is always true in R* Scripts"
+    },
+    {
+      "hash": "0xA917E39F2CEFD215",
+      "hash_signed": 753914389,
+      "namespace": "TASK",
+      "c_name": "_TASK_START_SCENARIO_IN_PLACE_2",
+      "lua_alias": "TaskStartScenarioInPlace_2",
+      "local_alias": "TaskStartScenarioInPlace_2",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Any",
+          "name": "p1"
+        },
+        {
+          "type": "const char*",
+          "name": "p2"
+        },
+        {
+          "type": "int",
+          "name": "p3"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        },
+        {
+          "type": "float",
+          "name": "p5"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        }
+      ],
+      "return_type": "void",
+      "comment": "Takes scenario point handle instead of hash",
+      "local_params": "ped, p1, p2, p3, p4, p5, p6",
+      "local_xml_summary": "Takes scenario point handle instead of hash"
+    },
+    {
+      "hash": "0xA92450B5AE687AAF",
+      "hash_signed": -1368884561,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_TYPE",
+      "lua_alias": "GetScenarioPointType",
+      "local_alias": "GetScenarioPointType",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "Hash",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_GET_SCENARIO_POINT_TYPE"
+    },
+    {
+      "hash": "0xAA135F9482C82CC3",
+      "hash_signed": -2100810557,
+      "namespace": "TASK",
+      "c_name": "IS_PED_ACTIVE_IN_SCENARIO",
+      "lua_alias": "IsPedActiveInScenario",
+      "local_alias": "IsPedActiveInScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, scenario",
+      "local_xml_summary": "IS_PED_ACTIVE_IN_SCENARIO"
+    },
+    {
+      "hash": "0xAB643407D0B26F07",
+      "hash_signed": -793612537,
+      "namespace": "PED",
+      "c_name": "_CAN_PED_USE_SCENARIO_POINT",
+      "lua_alias": "CanPedUseScenarioPoint",
+      "local_alias": "CanPedUseScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "Any",
+          "name": "p2"
+        },
+        {
+          "type": "Any",
+          "name": "p3"
+        },
+        {
+          "type": "Any",
+          "name": "p4"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "p2 is always 0, p3 is always 0, p4 is always 1",
+      "local_params": "ped, scenario, p2, p3, p4",
+      "local_xml_summary": "p2 is always 0, p3 is always 0, p4 is always 1"
+    },
+    {
+      "hash": "0xB219612B5568E9EC",
+      "hash_signed": 1432938988,
+      "namespace": "TASK",
+      "c_name": "_GET_RANSACK_SCENARIO_CONTAINER_OPENING_STATE",
+      "lua_alias": "GetScenarioContainerOpeningState",
+      "local_alias": "GetScenarioContainerOpeningState",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Entity",
+          "name": "entity"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Returns m_eContainerState",
+      "local_params": "entity",
+      "local_xml_summary": "Returns m_eContainerState"
+    },
+    {
+      "hash": "0xB6E1A185C2B9319A",
+      "hash_signed": -1028050534,
+      "namespace": "PERSISTENCE",
+      "c_name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS",
+      "lua_alias": "PersistenceIsScenarioMarkedAsLootedAtCoords",
+      "local_alias": "PersistenceIsScenarioMarkedAsLootedAtCoords",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "x, y, z",
+      "local_xml_summary": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED_AT_COORDS"
+    },
+    {
+      "hash": "0xB93EA7184BAA85C3",
+      "hash_signed": 1269466563,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_HEADING",
+      "lua_alias": "GetScenarioPointHeading",
+      "local_alias": "GetScenarioPointHeading",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "float",
+      "comment": "Params: p1 is always true in R* Scripts",
+      "local_params": "scenario, p1",
+      "local_xml_summary": "Params: p1 is always true in R* Scripts"
+    },
+    {
+      "hash": "0xBDED916A9F9B0604",
+      "hash_signed": -1617230332,
+      "namespace": "PED",
+      "c_name": "_REQUEST_PED_FOR_SCENARIO_TYPE",
+      "lua_alias": "RequestPedForScenarioType",
+      "local_alias": "RequestPedForScenarioType",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Object",
+          "name": "object"
+        },
+        {
+          "type": "const char*",
+          "name": "p2"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "const char*",
+          "name": "p4"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "",
+      "local_params": "ped, object, p2, scenarioType, p4, p5",
+      "local_xml_summary": "_REQUEST_PED_FOR_SCENARIO_TYPE"
+    },
+    {
+      "hash": "0xBEC65C6049B3219D",
+      "hash_signed": 1236476317,
+      "namespace": "PED",
+      "c_name": "_REQUEST_PROP_SCENARIO_PED",
+      "lua_alias": "RequestPropScenarioPed",
+      "local_alias": "RequestPropScenarioPed",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "Object",
+          "name": "object"
+        },
+        {
+          "type": "const char*",
+          "name": "p2"
+        },
+        {
+          "type": "const char*",
+          "name": "p3"
+        },
+        {
+          "type": "const char*",
+          "name": "p4"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "",
+      "local_params": "ped, object, p2, p3, p4, p5",
+      "local_xml_summary": "_REQUEST_PROP_SCENARIO_PED"
+    },
+    {
+      "hash": "0xC22AA08A8ADB87D4",
+      "hash_signed": -1965324332,
+      "namespace": "PED",
+      "c_name": "_GET_ACTIVE_DYNAMIC_SCENARIO_2",
+      "lua_alias": "GetActiveDynamicScenario_2",
+      "local_alias": "GetActiveDynamicScenario_2",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "Hash",
+      "comment": "Returns kneeling, sitting, squating, and sleeping scenario hashes",
+      "local_params": "ped",
+      "local_xml_summary": "Returns kneeling, sitting, squating, and sleeping scenario hashes"
+    },
+    {
+      "hash": "0xC47D9080A9A8856A",
+      "hash_signed": -1448573590,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_POINT_RADIUS",
+      "lua_alias": "SetScenarioPointRadius",
+      "local_alias": "SetScenarioPointRadius",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "float",
+          "name": "radius"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario, radius",
+      "local_xml_summary": "_SET_SCENARIO_POINT_RADIUS"
+    },
+    {
+      "hash": "0xC488B8C0E52560D8",
+      "hash_signed": -450535208,
+      "namespace": "PED",
+      "c_name": "_IS_PED_DOING_SCENARIO_TRANSITION",
+      "lua_alias": "IsPedDoingScenarioTransition",
+      "local_alias": "IsPedDoingScenarioTransition",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "_IS_PED_DOING_SCENARIO_TRANSITION"
+    },
+    {
+      "hash": "0xCB73D7521E7103F0",
+      "hash_signed": 510723056,
+      "namespace": "HUD",
+      "c_name": "_UI_PROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT",
+      "lua_alias": "UiPromptGetGroupIdForScenarioPoint",
+      "local_alias": "UiPromptGetGroupIdForScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Any",
+          "name": "p0"
+        },
+        {
+          "type": "int",
+          "name": "p1"
+        }
+      ],
+      "return_type": "int",
+      "comment": "",
+      "local_params": "p0, p1",
+      "local_xml_summary": "_UI_PROMPT_GET_GROUP_ID_FOR_SCENARIO_POINT"
+    },
+    {
+      "hash": "0xCCDAE6324B6A821C",
+      "hash_signed": 1265271324,
+      "namespace": "TASK",
+      "c_name": "TASK_USE_SCENARIO_POINT",
+      "lua_alias": "TaskUseScenarioPoint",
+      "local_alias": "TaskUseScenarioPoint",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "const char*",
+          "name": "conditionalAnim"
+        },
+        {
+          "type": "int",
+          "name": "p3"
+        },
+        {
+          "type": "BOOL",
+          "name": "p4"
+        },
+        {
+          "type": "BOOL",
+          "name": "p5"
+        },
+        {
+          "type": "Hash",
+          "name": "p6"
+        },
+        {
+          "type": "BOOL",
+          "name": "p7"
+        },
+        {
+          "type": "float",
+          "name": "p8"
+        },
+        {
+          "type": "BOOL",
+          "name": "p9"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped, scenario, conditionalAnim, p3, p4, p5, p6, p7, p8, p9",
+      "local_xml_summary": "TASK_USE_SCENARIO_POINT"
+    },
+    {
+      "hash": "0xD00E50E673802D71",
+      "hash_signed": 1937780081,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_TYPE_ENABLED_HASH",
+      "lua_alias": "SetScenarioTypeEnabledHash",
+      "local_alias": "SetScenarioTypeEnabledHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenarioType, toggle",
+      "local_xml_summary": "_SET_SCENARIO_TYPE_ENABLED_HASH"
+    },
+    {
+      "hash": "0xD04241BBF6D03A5E",
+      "hash_signed": -154125730,
+      "namespace": "TASK",
+      "c_name": "GET_RANSACK_SCENARIO_POINT_PED_IS_USING",
+      "lua_alias": "GetRansackScenarioPointPedIsUsing",
+      "local_alias": "GetRansackScenarioPointPedIsUsing",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "Any",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "GET_RANSACK_SCENARIO_POINT_PED_IS_USING"
+    },
+    {
+      "hash": "0xD37401D78A929A49",
+      "hash_signed": -1970103735,
+      "namespace": "PED",
+      "c_name": "REMOVE_SCENARIO_BLOCKING_AREAS",
+      "lua_alias": "RemoveScenarioBlockingAreas",
+      "local_alias": "RemoveScenarioBlockingAreas",
+      "in_local_lua_build": true,
+      "params": [],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "",
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0xD3A0DA8F91612C6E",
+      "hash_signed": -1855902610,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_POINT_HEADING",
+      "lua_alias": "SetScenarioPointHeading",
+      "local_alias": "SetScenarioPointHeading",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "float",
+          "name": "heading"
+        },
+        {
+          "type": "BOOL",
+          "name": "p2"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario, heading, p2",
+      "local_xml_summary": "_SET_SCENARIO_POINT_HEADING"
+    },
+    {
+      "hash": "0xDB48E99F8E064E56",
+      "hash_signed": -1912189354,
+      "namespace": "PED",
+      "c_name": "_SET_SCENARIO_ANIMAL_DENSITY_MULTIPLIER_THIS_FRAME",
+      "lua_alias": "SetScenarioAnimalDensityMultiplierThisFrame",
+      "local_alias": "SetScenarioAnimalDensityMultiplierThisFrame",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "multiplier"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "multiplier",
+      "local_xml_summary": "_SET_SCENARIO_ANIMAL_DENSITY_MULTIPLIER_THIS_FRAME"
+    },
+    {
+      "hash": "0xDCC374913DE6AAA6",
+      "hash_signed": 1038527142,
+      "namespace": "TASK",
+      "c_name": "_IS_SCENARIO_GROUP_ENABLED_HASH",
+      "lua_alias": "IsScenarioGroupEnabledHash",
+      "local_alias": "IsScenarioGroupEnabledHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Hash",
+          "name": "scenarioGroup"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioGroup",
+      "local_xml_summary": "_IS_SCENARIO_GROUP_ENABLED_HASH"
+    },
+    {
+      "hash": "0xDD902D0349AFAD3A",
+      "hash_signed": 1236249914,
+      "namespace": "TASK",
+      "c_name": "RESET_SCENARIO_GROUPS_ENABLED",
+      "lua_alias": "ResetScenarioGroupsEnabled",
+      "local_alias": "ResetScenarioGroupsEnabled",
+      "in_local_lua_build": true,
+      "params": [],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "",
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0xDF7993356F52359A",
+      "hash_signed": 1867658650,
+      "namespace": "TASK",
+      "c_name": "_GET_SCENARIO_POINT_PED_IS_USING",
+      "lua_alias": "GetScenarioPointPedIsUsing",
+      "local_alias": "GetScenarioPointPedIsUsing",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "BOOL",
+          "name": "p1"
+        }
+      ],
+      "return_type": "int",
+      "comment": "",
+      "local_params": "ped, p1",
+      "local_xml_summary": "_GET_SCENARIO_POINT_PED_IS_USING"
+    },
+    {
+      "hash": "0xE5A3DD2FF84E1A4B",
+      "hash_signed": -129099189,
+      "namespace": "PLAYER",
+      "c_name": "_FORCE_REST_SCENARIO",
+      "lua_alias": "ForceRestScenario",
+      "local_alias": "ForceRestScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "toggle",
+      "local_xml_summary": "NativeDB Introduced: v1232"
+    },
+    {
+      "hash": "0xE7BBC4E56B989449",
+      "hash_signed": 1805161545,
+      "namespace": "TASK",
+      "c_name": "_GET_LINKED_SCENARIO_POINTS",
+      "lua_alias": null,
+      "local_alias": "N_0xe7bbc4e56b989449",
+      "in_local_lua_build": false,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenarioPoint"
+        },
+        {
+          "type": "int*",
+          "name": "outPoints"
+        },
+        {
+          "type": "int",
+          "name": "maxPoints"
+        }
+      ],
+      "return_type": "int",
+      "comment": "Fills an output array with scenario points linked (\"chained\") to a given parent scenario point. Returns the number of linked points found. Writes up to maxPoints and zeroes remaining entries. Useful for flows like chained put-down scenarios. Params: - scenarioPoint: Parent scenario point handle. - outPoints: Pointer to an int array that receives the linked scenario point handles. - maxPoints: Capacity of outPoints. Returns: Count of linked scenario points written (0 if none).",
+      "local_params": null,
+      "local_xml_summary": null
+    },
+    {
+      "hash": "0xEA31F199A73801D3",
+      "hash_signed": -1489501741,
+      "namespace": "TASK",
+      "c_name": "_DOES_SCENARIO_POINT_HAVE_PROPS",
+      "lua_alias": "DoesScenarioPointHaveProps",
+      "local_alias": "DoesScenarioPointHaveProps",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_DOES_SCENARIO_POINT_HAVE_PROPS"
+    },
+    {
+      "hash": "0xEB47EC4E34FB7EE1",
+      "hash_signed": 888897249,
+      "namespace": "TASK",
+      "c_name": "SET_SCENARIO_TYPE_ENABLED",
+      "lua_alias": "SetScenarioTypeEnabled",
+      "local_alias": "SetScenarioTypeEnabled",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "const char*",
+          "name": "scenarioType"
+        },
+        {
+          "type": "BOOL",
+          "name": "toggle"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenarioType, toggle",
+      "local_xml_summary": "SET_SCENARIO_TYPE_ENABLED"
+    },
+    {
+      "hash": "0xEC6935EBE0847B90",
+      "hash_signed": -528188528,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayDirectedNormalScenarioExit",
+      "local_alias": "SetPedShouldPlayDirectedNormalScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "Old name: _SET_PED_SHOULD_PLAY_DIRECTED_SCENARIO_EXIT",
+      "local_params": "ped, x, y, z",
+      "local_xml_summary": "SET_PED_SHOULD_PLAY_DIRECTED_NORMAL_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0xEEE4829304F93EEE",
+      "hash_signed": 83443438,
+      "namespace": "TASK",
+      "c_name": "_SET_SCENARIO_POINT_ACTIVE",
+      "lua_alias": "SetScenarioPointActive",
+      "local_alias": "SetScenarioPointActive",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        },
+        {
+          "type": "BOOL",
+          "name": "active"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "scenario, active",
+      "local_xml_summary": "_SET_SCENARIO_POINT_ACTIVE"
+    },
+    {
+      "hash": "0xEEED8FAFEC331A70",
+      "hash_signed": -332195216,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_FLEE_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayFleeScenarioExit",
+      "local_alias": "SetPedShouldPlayFleeScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        },
+        {
+          "type": "int",
+          "name": "lookIntensity"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "lookIntensity: 0 - REACT_LOOK_NONE 1 - REACT_LOOK_LOW 2 - REACT_LOOK_MEDIUM 3 - REACT_LOOK_HIGH",
+      "local_params": "ped, x, y, z, lookIntensity",
+      "local_xml_summary": "lookIntensity: 0 - REACT_LOOK_NONE 1 - REACT_LOOK_LOW 2 - REACT_LOOK_MEDIUM 3 - REACT_LOOK_HIGH"
+    },
+    {
+      "hash": "0xF1C03A5352243A30",
+      "hash_signed": 1378105904,
+      "namespace": "PED",
+      "c_name": "SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT",
+      "lua_alias": "SetPedShouldPlayImmediateScenarioExit",
+      "local_alias": "SetPedShouldPlayImmediateScenarioExit",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        }
+      ],
+      "return_type": "void",
+      "comment": "",
+      "local_params": "ped",
+      "local_xml_summary": "SET_PED_SHOULD_PLAY_IMMEDIATE_SCENARIO_EXIT"
+    },
+    {
+      "hash": "0xF533D68FF970D190",
+      "hash_signed": -110046832,
+      "namespace": "TASK",
+      "c_name": "FIND_SCENARIO_OF_TYPE_HASH",
+      "lua_alias": "FindScenarioOfTypeHash",
+      "local_alias": "FindScenarioOfTypeHash",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "float",
+          "name": "xPos"
+        },
+        {
+          "type": "float",
+          "name": "yPos"
+        },
+        {
+          "type": "float",
+          "name": "zPos"
+        },
+        {
+          "type": "Hash",
+          "name": "scenarioType"
+        },
+        {
+          "type": "float",
+          "name": "distance"
+        },
+        {
+          "type": "Any",
+          "name": "p5"
+        },
+        {
+          "type": "BOOL",
+          "name": "p6"
+        }
+      ],
+      "return_type": "int",
+      "comment": "",
+      "local_params": "xPos, yPos, zPos, scenarioType, distance, p5, p6",
+      "local_xml_summary": "FIND_SCENARIO_OF_TYPE_HASH"
+    },
+    {
+      "hash": "0xF9034C136C9E00D3",
+      "hash_signed": 1822294227,
+      "namespace": "TASK",
+      "c_name": "DOES_SCENARIO_GROUP_EXIST",
+      "lua_alias": "DoesScenarioGroupExist",
+      "local_alias": "DoesScenarioGroupExist",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "const char*",
+          "name": "scenarioGroup"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenarioGroup",
+      "local_xml_summary": "DOES_SCENARIO_GROUP_EXIST"
+    },
+    {
+      "hash": "0xFB7CF1DE938A3E22",
+      "hash_signed": -1819656670,
+      "namespace": "PERSISTENCE",
+      "c_name": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED",
+      "lua_alias": "PersistenceIsScenarioMarkedAsLooted",
+      "local_alias": "PersistenceIsScenarioMarkedAsLooted",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "int",
+          "name": "scenario"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "scenario",
+      "local_xml_summary": "_PERSISTENCE_IS_SCENARIO_MARKED_AS_LOOTED"
+    },
+    {
+      "hash": "0xFE07FF6495D52E2A",
+      "hash_signed": -1781191126,
+      "namespace": "PED",
+      "c_name": "SET_PED_PANIC_EXIT_SCENARIO",
+      "lua_alias": "SetPedPanicExitScenario",
+      "local_alias": "SetPedPanicExitScenario",
+      "in_local_lua_build": true,
+      "params": [
+        {
+          "type": "Ped",
+          "name": "ped"
+        },
+        {
+          "type": "float",
+          "name": "x"
+        },
+        {
+          "type": "float",
+          "name": "y"
+        },
+        {
+          "type": "float",
+          "name": "z"
+        }
+      ],
+      "return_type": "BOOL",
+      "comment": "",
+      "local_params": "ped, x, y, z",
+      "local_xml_summary": "SET_PED_PANIC_EXIT_SCENARIO"
+    }
+  ]
+}
