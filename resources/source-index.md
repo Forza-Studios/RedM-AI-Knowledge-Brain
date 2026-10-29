@@ -39,6 +39,17 @@ sources:
 - RedM scripting docs
 - Cfx native and resource documentation
 
+### Added 2026-10-29: resource architecture and networking
+
+- [Cfx events overview](https://docs.fivem.net/docs/scripting-manual/working-with-events/)
+- [Cfx event listeners](https://docs.fivem.net/docs/scripting-manual/working-with-events/listening-for-events/)
+- [Cfx event triggering and latent events](https://docs.fivem.net/docs/scripting-manual/working-with-events/triggering-events/)
+- [Cfx server-event security guidance](https://docs.fivem.net/docs/developers/server-security/)
+- [Cfx state bags](https://docs.fivem.net/docs/scripting-manual/networking/state-bags/)
+- [Cfx network and local identifiers](https://docs.fivem.net/docs/scripting-manual/networking/ids/)
+- [Cfx Lua runtime and exports](https://docs.fivem.net/docs/scripting-manual/runtimes/lua/)
+- [Cfx resource manifest reference](https://docs.fivem.net/docs/scripting-reference/resource-manifest/)
+
 ## Frameworks
 
 - VORP Core docs and library reference
